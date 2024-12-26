@@ -49,7 +49,7 @@ const Tabs = ({ handleTab, activeTab }) => {
 	];
 
 	return (
-		<div className='relative -top-6 -translate-y-1/2 -left-1/2 translate-x-1/2 w-[950px] h-[950px] flex items-center justify-center gap-[100px]'>
+		<div className='absolute -top-6 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[950px] h-[950px] flex items-center justify-center gap-[100px]'>
 			{tabsContent.map((tab) => (
 				<button
 					key={tab.id}
