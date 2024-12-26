@@ -66,14 +66,15 @@
 	--fs-h5: 20px;
 
 	/** font weight */
-	--fw-h1: 400;
-	--fw-h2: 400;
-	--fw-h3: 400;
-	--fw-h4: 400;
-	--fw-h5: 400;
-	--fw-h6: 400;
+	--fw-h1: 700;
+	--fw-h2: 700;
+	--fw-h3: 700;
+	--fw-h4: 700;
+	--fw-h5: 700;
+	--fw-h6: 700;
 
 	/* line height */
+	--lh-h1: 80.6px;
 	--lh-h2: 58.8px;
 	--lh-h3: 44.8px;
 	--lh-h4: 30.8px;
@@ -162,7 +163,8 @@ textarea {
 }
 .b1-ar {
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 400;
+	line-height: 28.8px;
 }
 .b2-ar {
 	font-size: 16px;
@@ -182,9 +184,8 @@ textarea {
 }
 
 /* buttons */
-.btn {
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 500;
+button {
+	all: unset;
+	box-sizing: border-box;
 	cursor: pointer;
 }

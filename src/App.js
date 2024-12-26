@@ -1,10 +1,14 @@
+import { Navbar } from "./components";
+import Hero from "./components/hero/Hero";
+import TrackYourOrder from "./components/trackYourOrder/TrackYourOrder";
+
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header text-2xl '>
-				الكفاءة تلتقي بالموثوقية في نقل السيارات{" "}
-			</header>
-		</div>
+		<main className='max-w-screen-2xl mx-auto'>
+			<Navbar />
+			<Hero />
+			<TrackYourOrder />
+		</main>
 	);
 }
 

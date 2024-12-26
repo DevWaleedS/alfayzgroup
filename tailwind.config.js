@@ -83,6 +83,9 @@ module.exports = {
 			animation: {
 				"custom-bounce": "custom-bounce 2.5s ease-in-out infinite",
 			},
+			boxShadow: {
+				"custom-shadow": "0px 0px 35px 0px rgba(0, 0, 2, 0.07)",
+			},
 		},
 	},
 	plugins: [],
