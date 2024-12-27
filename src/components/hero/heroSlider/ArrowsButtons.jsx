@@ -4,7 +4,7 @@ import { LineBetweenArrows } from "../../../assets/icons";
 const ArrowsButtons = ({ swiperRef, isEnd, isBeginning }) => {
 	return (
 		<div
-			className={`flex justify-start items-center gap-2 absolute bottom-[900px] !left-[10px] z-10`}>
+			className={`flex justify-start items-center gap-2 absolute bottom-[490px] !left-[10px] z-10`}>
 			<button
 				className={`${
 					isBeginning

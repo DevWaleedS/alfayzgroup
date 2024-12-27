@@ -1,5 +1,8 @@
 import { Navbar } from "./components";
+import AboutUs from "./components/aboutUs/AboutUs";
 import Hero from "./components/hero/Hero";
+import OurServices from "./components/ourServices/OurServices";
+import Statistic from "./components/statistic/Statistic";
 import TrackYourOrder from "./components/trackYourOrder/TrackYourOrder";
 
 function App() {
@@ -8,6 +11,9 @@ function App() {
 			<Navbar />
 			<Hero />
 			<TrackYourOrder />
+			<OurServices />
+			<AboutUs />
+			<Statistic />
 		</main>
 	);
 }

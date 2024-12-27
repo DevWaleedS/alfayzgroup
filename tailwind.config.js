@@ -85,6 +85,13 @@ module.exports = {
 			},
 			boxShadow: {
 				"custom-shadow": "0px 0px 35px 0px rgba(0, 0, 2, 0.07)",
+				serviceBoxShadow: "0px 12px 35px 0px rgba(93, 76, 77, 0.2)",
+				"aboutUs-shadow": "12px 12px 35px 0px rgba(209, 17, 22, 0.08)",
+			},
+
+			backgroundImage: {
+				"custom-gradient":
+					"linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 70%)",
 			},
 		},
 	},

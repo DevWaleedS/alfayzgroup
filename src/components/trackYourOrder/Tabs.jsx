@@ -5,45 +5,29 @@ import {
 	PaperIcon,
 	GlobeIcon,
 	ShadowUnderIcons,
+	DeliveryTruckIconGray,
+	WorldWhite,
+	PaperIconWhite,
 } from "../../assets/icons";
 
 const Tabs = ({ handleTab, activeTab }) => {
 	const tabsContent = [
 		{
 			id: 1,
-			icon: (
-				<DeliveryTruckIcon
-					className={`${
-						activeTab === "تتبع سيارتك" ? "text-bg-light" : "text-grayscale-400"
-					}`}
-				/>
-			),
+			iconWhite: <DeliveryTruckIcon />,
+			iconGray: <DeliveryTruckIconGray />,
 			title: "تتبع سيارتك",
 		},
 		{
 			id: 2,
-			icon: (
-				<PaperIcon
-					className={`${
-						activeTab === "الحجز السريع"
-							? "text-bg-light"
-							: "text-grayscale-400"
-					}`}
-				/>
-			),
+			iconGray: <PaperIcon />,
+			iconWhite: <PaperIconWhite />,
 			title: "الحجز السريع",
 		},
 		{
 			id: 3,
-			icon: (
-				<GlobeIcon
-					className={`${
-						activeTab === "مواقع فروعنا"
-							? "text-bg-light"
-							: "text-grayscale-400"
-					}`}
-				/>
-			),
+			iconGray: <GlobeIcon />,
+			iconWhite: <WorldWhite />,
 			title: "مواقع فروعنا",
 		},
 	];
@@ -61,7 +45,7 @@ const Tabs = ({ handleTab, activeTab }) => {
 						className={`absolute -top-12 left-1/2 -translate-x-1/2  w-[118px] h-[118px] rounded-full  flex flex-col items-center justify-center transition-colors delay-200 ease-in-out group-hover:bg-primary-700 ${
 							activeTab === tab.title ? " bg-primary-700" : "bg-bg-light"
 						}`}>
-						{tab.icon}
+						{activeTab === tab.title ? tab.iconWhite : tab.iconGray}
 						<ShadowUnderIcons />
 					</div>
 					<p

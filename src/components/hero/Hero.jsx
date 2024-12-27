@@ -30,7 +30,7 @@ const Hero = () => {
 	const [isBeginning, setIsBeginning] = useState(true);
 
 	return (
-		<div className='relative w-full h-[1600px] overflow-hidden'>
+		<div className='relative w-full h-[1200px] overflow-hidden'>
 			<ArrowsButtons
 				isEnd={isEnd}
 				swiperRef={swiperRef}
