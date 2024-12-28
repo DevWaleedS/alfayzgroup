@@ -1,7 +1,5 @@
 import React from "react";
 
-import { hero } from "../../../assets/images";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -35,13 +33,13 @@ const HeroSlider = ({ sliders, swiperRef, setIsBeginning, setIsEnd }) => {
 					return `<span class="${className}" data-number="${formattedNumber}"></span>`;
 				},
 			}}
-			// autoplay={{
-			// 	delay: 2000,
-			// 	disableOnInteraction: false,
-			// }}
+			autoplay={{
+				delay: 2000,
+				disableOnInteraction: false,
+			}}
 			loop={true}
 			freeMode={true}
-			modules={[Navigation, Pagination, FreeMode]}
+			modules={[Navigation, Pagination, Autoplay, FreeMode]}
 			className='relative w-full h-full'>
 			{sliders.map((slider) => (
 				<SwiperSlide

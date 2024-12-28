@@ -4,15 +4,26 @@ import SectionParagraph from "./SectionParagraph";
 import SectionHeadLin from "./SectionHeadLin";
 import Button from "./button/Button";
 
-const SectionContentBox = ({ title, headline, paragraph, buttonText }) => {
+const SectionContentBox = ({
+	className,
+	title,
+	headline,
+	paragraph,
+	buttonText,
+	hasTowLines,
+	hideBtn,
+	align = "items-start",
+	width = "w-[516px]",
+}) => {
 	return (
-		<div className='w-full flex justify-between items-center mb-[50px]'>
-			<div className='w-[516px] flex flex-col items-start gap-3'>
-				<SectionTitle title={title} />
+		<div
+			className={`w-full ${className} flex justify-between items-center mb-[50px] `}>
+			<div className={`${width} flex flex-col ${align} gap-3`}>
+				<SectionTitle title={title} hasTowLines={hasTowLines} />
 				<SectionHeadLin>{headline}</SectionHeadLin>
-				<SectionParagraph paragraph={paragraph} />
+				<SectionParagraph paragraph={paragraph} align={align} />
 			</div>
-			<Button className='rounded-[10px]'>{buttonText}</Button>
+			{!hideBtn && <Button className='rounded-[10px]'>{buttonText}</Button>}
 		</div>
 	);
 };

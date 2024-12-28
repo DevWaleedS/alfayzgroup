@@ -1,9 +1,16 @@
-import { Navbar } from "./components";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Hero from "./components/hero/Hero";
-import OurServices from "./components/ourServices/OurServices";
-import Statistic from "./components/statistic/Statistic";
-import TrackYourOrder from "./components/trackYourOrder/TrackYourOrder";
+import {
+	Navbar,
+	Hero,
+	TrackYourOrder,
+	OurServices,
+	AboutUs,
+	Statistic,
+	ContactUs,
+	OurPartner,
+	Ratings,
+	Questions,
+	Footer,
+} from "./components";
 
 function App() {
 	return (
@@ -14,6 +21,11 @@ function App() {
 			<OurServices />
 			<AboutUs />
 			<Statistic />
+			<ContactUs />
+			<OurPartner />
+			<Ratings />
+			<Questions />
+			<Footer />
 		</main>
 	);
 }

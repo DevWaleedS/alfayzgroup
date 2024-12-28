@@ -34,6 +34,35 @@ import { ReactComponent as Statistic04 } from "./truck.svg";
 import { ReactComponent as Statistic05 } from "./teamwork.svg";
 import { ReactComponent as LineAfterStatistic } from "./Group 61.svg";
 
+import { ReactComponent as ContactUsImg } from "./contactUsImg.svg";
+import { ReactComponent as SectionTitleRightLine } from "./Rectangle 8.svg";
+import { ReactComponent as BorderBottom } from "./border-bottom.svg";
+
+import { ReactComponent as UserIcon } from "./user.svg";
+import { ReactComponent as Message } from "./messge.svg";
+import { ReactComponent as Call } from "./call.svg";
+import { ReactComponent as Book } from "./book.svg";
+import { ReactComponent as OpenMessage } from "./openmessage.svg";
+
+import { ReactComponent as Partner01 } from "./Iveco-logo.svg";
+import { ReactComponent as Partner02 } from "./mohamed-yousuf-naghi-and-brothers-group-logo.svg";
+import { ReactComponent as Partner03 } from "./nissan.svg";
+import { ReactComponent as Partner04 } from "./vlovo.svg";
+import { ReactComponent as Partner05 } from "./elgmih-logo.svg";
+import { ReactComponent as Partner06 } from "./abdlatif-group.svg";
+import { ReactComponent as Partner07 } from "./relunt.svg";
+
+import { ReactComponent as RatingImage } from "./Frame 103.svg";
+import { ReactComponent as RatingStar } from "./Frame 104.svg";
+import { ReactComponent as PlusIcon } from "./Group 69.svg";
+import { ReactComponent as MinceIcon } from "./Vector 39.svg";
+
+import { ReactComponent as Instagram } from "./instagram.svg";
+import { ReactComponent as TwitterX } from "./twitter.svg";
+import { ReactComponent as Facebook } from "./facebook.svg";
+import { ReactComponent as Linkedin } from "./linkedin.svg";
+import { ReactComponent as MaskGroupFooter } from "./Mask group.svg";
+
 export {
 	World,
 	HeroRightLine,
@@ -68,4 +97,28 @@ export {
 	Statistic04,
 	Statistic05,
 	LineAfterStatistic,
+	ContactUsImg,
+	SectionTitleRightLine,
+	BorderBottom,
+	UserIcon,
+	Message,
+	OpenMessage,
+	Call,
+	Book,
+	Partner01,
+	Partner02,
+	Partner03,
+	Partner04,
+	Partner05,
+	Partner06,
+	Partner07,
+	RatingImage,
+	RatingStar,
+	PlusIcon,
+	MinceIcon,
+	Instagram,
+	TwitterX,
+	Facebook,
+	Linkedin,
+	MaskGroupFooter,
 };

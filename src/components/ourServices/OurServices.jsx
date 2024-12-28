@@ -48,9 +48,10 @@ const servicesData = [
 
 const OurServices = () => {
 	return (
-		<section className='bg-bg-darken py-[100px] mt-[160px]'>
-			<div className='container'>
+		<section className='bg-bg-darken  mt-[160px] '>
+			<div className='container '>
 				<SectionContentBox
+					className='pt-[80px]'
 					title={"خدماتنا"}
 					headline={
 						<>
@@ -64,7 +65,7 @@ const OurServices = () => {
 					buttonText='المزيد'
 				/>
 
-				<section className=' h-[594px] flex justify-between gap-[30px]'>
+				<section className='  flex justify-between flex-wrap gap-[30px]'>
 					{servicesData.map((item) => (
 						<div className='relative w-max h-[594px]' key={item.id}>
 							<div className=' absolute left-5 -top-10 w-[136px] h-[140px] py-[35px] px-[33px] bg-bg-light rounded-full'>

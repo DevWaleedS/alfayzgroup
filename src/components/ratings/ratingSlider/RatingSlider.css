@@ -1,0 +1,24 @@
+.rating-pagination {
+	user-select: none;
+}
+
+.rating-pagination .swiper-pagination-bullet {
+	position: relative;
+
+	width: 8px;
+	height: 4px;
+	opacity: 1;
+	background: var(--grayscale-200) !important;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	transition: all 0.3s ease;
+}
+
+/* Active bullet styled as a scrollbar */
+.rating-pagination .swiper-pagination-bullet-active {
+	width: 12px;
+	background: var(--primary-700) !important;
+}
