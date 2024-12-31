@@ -2,7 +2,9 @@ import React, { useRef, useState } from "react";
 import HeroSlider from "./heroSlider/HeroSlider";
 import ArrowsButtons from "./heroSlider/ArrowsButtons";
 import CustomPagination from "./heroSlider/CustomPagination";
+import SocialLinks from "../socialLinks/SocialLinks";
 import "./heroSlider/HeroSlider.css";
+
 import { hero } from "../../assets/images";
 
 const sliders = [
@@ -30,7 +32,7 @@ const Hero = () => {
 	const [isBeginning, setIsBeginning] = useState(true);
 
 	return (
-		<div className='relative w-full h-[1200px] overflow-hidden'>
+		<div className='relative w-full md:h-[1200px] h-full overflow-hidden z-10 '>
 			<ArrowsButtons
 				isEnd={isEnd}
 				swiperRef={swiperRef}
@@ -44,6 +46,8 @@ const Hero = () => {
 				isBeginning={isBeginning}
 				setIsBeginning={setIsBeginning}
 			/>
+
+			<SocialLinks position='md:left-10 left-20  2xl:top-[14rem] xl:top-[12rem] top-[2rem] z-10' />
 
 			<CustomPagination />
 		</div>

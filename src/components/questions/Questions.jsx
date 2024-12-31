@@ -6,7 +6,8 @@ const Questions = () => {
 	return (
 		<section className=' relative container mt-[180px]'>
 			<SectionContentBox
-				width='w-full '
+				width='w-full'
+				justify={"justify-center"}
 				align={"items-center"}
 				title={"إجابات على أسئلتك الشائعة"}
 				hasTowLines={true}
@@ -18,7 +19,7 @@ const Questions = () => {
 				hideBtn={true}
 			/>
 
-			<div className='w-[1110px] flex flex-col items-start mx-auto gap-6 '>
+			<div className='md:w-[1110px] w-full flex flex-col items-start mx-auto gap-3 '>
 				<QuestionAccordion question='كيف يمكنني حجز خدمة نقل سيارة؟'>
 					هنا اجابه السؤال.
 				</QuestionAccordion>

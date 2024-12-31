@@ -24,7 +24,7 @@ const FooterLinksBox = () => {
 			<h4 className=' headline-4-ar text-grayscale-700 text-right mb-[25px]'>
 				الفايز جروب
 			</h4>
-			<ul className='w-[398px] flex items-start gap-x-[70px] gap-y-5 flex-wrap '>
+			<ul className='md:w-[398px] w-full flex items-start gap-x-[70px] gap-y-5 flex-wrap '>
 				{links.map((link, index) => (
 					<li
 						key={index}

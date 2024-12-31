@@ -57,11 +57,17 @@ import { ReactComponent as RatingStar } from "./Frame 104.svg";
 import { ReactComponent as PlusIcon } from "./Group 69.svg";
 import { ReactComponent as MinceIcon } from "./Vector 39.svg";
 
-import { ReactComponent as Instagram } from "./instagram.svg";
 import { ReactComponent as TwitterX } from "./twitter.svg";
 import { ReactComponent as Facebook } from "./facebook.svg";
 import { ReactComponent as Linkedin } from "./linkedin.svg";
+import { ReactComponent as LogoAsBg } from "./logoAsBg.svg";
+import { ReactComponent as Instagram } from "./instagram.svg";
+import { ReactComponent as ServicesIcon } from "./serviceIcn.svg";
 import { ReactComponent as MaskGroupFooter } from "./Mask group.svg";
+
+import { ReactComponent as WhatsAppIcon } from "./WhatssApp.svg";
+import { ReactComponent as MessageRed } from "./MessageRed.svg";
+import { ReactComponent as CallCenter } from "./CallCennter.svg";
 
 export {
 	World,
@@ -121,4 +127,9 @@ export {
 	Facebook,
 	Linkedin,
 	MaskGroupFooter,
+	LogoAsBg,
+	ServicesIcon,
+	WhatsAppIcon,
+	MessageRed,
+	CallCenter,
 };

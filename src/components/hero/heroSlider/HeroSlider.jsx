@@ -39,7 +39,7 @@ const HeroSlider = ({ sliders, swiperRef, setIsBeginning, setIsEnd }) => {
 			}}
 			loop={true}
 			freeMode={true}
-			modules={[Navigation, Pagination, Autoplay, FreeMode]}
+			modules={[Navigation, Pagination, FreeMode]}
 			className='relative w-full h-full'>
 			{sliders.map((slider) => (
 				<SwiperSlide

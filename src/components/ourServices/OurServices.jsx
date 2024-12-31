@@ -48,10 +48,10 @@ const servicesData = [
 
 const OurServices = () => {
 	return (
-		<section className='bg-bg-darken  mt-[160px] '>
+		<section className='bg-bg-darken 2xl:-mt-[176px] xl:-mt-[180px] mt-48'>
 			<div className='container '>
 				<SectionContentBox
-					className='pt-[80px]'
+					className='md:pt-[80px] pt-[30px]'
 					title={"خدماتنا"}
 					headline={
 						<>
@@ -65,15 +65,17 @@ const OurServices = () => {
 					buttonText='المزيد'
 				/>
 
-				<section className='  flex justify-between flex-wrap gap-[30px]'>
+				<section className='flex md:flex-row flex-col items-start gap-4'>
 					{servicesData.map((item) => (
-						<div className='relative w-max h-[594px]' key={item.id}>
-							<div className=' absolute left-5 -top-10 w-[136px] h-[140px] py-[35px] px-[33px] bg-bg-light rounded-full'>
+						<div
+							className='relative md:w-1/4 w-full md:h-[594px] h-[530px] '
+							key={item.id}>
+							<div className='absolute left-5 -top-10 flex items-center justify-center md:w-[136px] md:h-[140px] w-[100px] h-[100px] md:py-[35px] py-[25px] md:px-[33px] px-[23px] bg-bg-light rounded-full'>
 								{item.icon}
 							</div>
-							<div className='w-full h-[536px] pt-[2px] px-[12px] pb-[30px] bg-white transition-shadow delay-200 ease-in-out hover:shadow-serviceBoxShadow rounded-[20px]'>
+							<div className='w-full md:h-[536px] h-[480px] pt-[2px] px-[12px] pb-[30px] bg-white transition-shadow delay-200 ease-in-out hover:shadow-serviceBoxShadow rounded-[20px]'>
 								<img
-									className='w-[375px] h-[250px] object-cover mb-8'
+									className='w-full md:h-[250px] h-[230px] object-cover mb-8 rounded-lg'
 									loading='lazy'
 									src={item.img}
 									alt={item.title}
@@ -82,7 +84,7 @@ const OurServices = () => {
 									<h3 className='headline-3-ar text-grayscale-600'>
 										{item.title}
 									</h3>
-									<div className='w-[360px] h-[24px] flex justify-between '>
+									<div className='w-full h-[24px] flex justify-between '>
 										<div className='w-[110px] h-full flex items-center gap-3'>
 											<Vector25 className='h-5' />
 											<span className='text-base font-medium leading-[23.52px] text-grayscale-400'>
@@ -103,10 +105,10 @@ const OurServices = () => {
 										</div>
 									</div>
 
-									<p className='w-[375px] text-balance leading-[23.52px] font-medium text-right text-grayscale-500'>
+									<p className='w-full text-balance leading-[23.52px] font-medium text-right text-grayscale-500'>
 										{item.desc}
 									</p>
-									<Button icon className='w-full rounded-[13px]'>
+									<Button icon className='w-full  md:rounded-[13px] rounded-lg'>
 										معرفة المزيد
 									</Button>
 								</div>

@@ -12,12 +12,12 @@ const TrackOrderForm = () => {
 	};
 
 	return (
-		<div className='w-[796px] h-[280px] flex flex-col items-start gap-8 z-[2]'>
+		<div className='w-full  flex flex-col items-start md:gap-8 gap-4 z-[2]'>
 			<h3 className='headline-3-ar text-grayscale-600'>
 				تتبع سيارتك من خلال رقم بوليصه الشحن...
 			</h3>
 
-			<div className='flex justify-end gap-[150px] '>
+			<div className='flex md:flex-row flex-col justify-end md:gap-[150px] gap-4 '>
 				<div className='flex items-end gap-2 '>
 					<input
 						type='radio'
@@ -26,7 +26,7 @@ const TrackOrderForm = () => {
 						value='shippingNumber'
 						checked={selectedOption === "shippingNumber"}
 						onChange={handleOptionChange}
-						className='w-[20px] h-[20px] cursor-pointer accent-primary-600'
+						className='md:w-[20px] md:h-[20px] w-4 h-4 cursor-pointer accent-primary-600'
 					/>
 					<label
 						htmlFor='shippingNumber'
@@ -43,7 +43,7 @@ const TrackOrderForm = () => {
 						value='receiverPhone'
 						checked={selectedOption === "receiverPhone"}
 						onChange={handleOptionChange}
-						className='w-[20px] h-[20px] cursor-pointer accent-primary-600'
+						className='md:w-[20px] md:h-[20px] w-4 h-4 cursor-pointer accent-primary-600'
 					/>
 					<label
 						htmlFor='receiverPhone'
@@ -55,8 +55,8 @@ const TrackOrderForm = () => {
 
 			<form
 				onSubmit={handleOnSubmit}
-				className='w-[796px] h-[95px] flex justify-between items-center py-[20px] px-[30px] bg-bg-light shadow-custom-shadow rounded-md'>
-				<div className='w-[736px] h-[50px] flex justify-between items-center '>
+				className='md:w-[796px] w-full md:h-[95px] h-14 flex justify-between items-center py-[20px] px-[30px] bg-bg-light shadow-custom-shadow rounded-md'>
+				<div className='md:w-[736px] w-full md:h-[50px] h-10 flex justify-between items-center '>
 					<input
 						className='bg-bg-light text-primary-600 '
 						type='text'
@@ -66,7 +66,7 @@ const TrackOrderForm = () => {
 								: "ادخل رقم جوال المستلم"
 						}
 					/>
-					<button className='w-[112px] h-[50px] bg-primary-700 rounded-[10px] py-[13px] px-[40px] text-lg font-bold leading-[25.6px] text-bg-light transition-colors hover:bg-primary-600 '>
+					<button className='w-[112px] md:h-[50px] h-10 bg-primary-700 rounded-[10px] md:py-[13px] py-1 md:px-[40px] px-8 text-lg font-bold leading-[25.6px] text-bg-light transition-colors hover:bg-primary-600 '>
 						بحث
 					</button>
 				</div>

@@ -13,31 +13,41 @@ import CountUp from "react-countup";
 const statisticData = [
 	{
 		id: 1,
-		icon: <Statistic01 className='h-[100px] w-[100px]' />,
+		icon: (
+			<Statistic01 className='md:h-[100px] md:w-[100px] h-[80px] w-[80px]' />
+		),
 		title: "مواقع",
 		count: "10",
 	},
 	{
 		id: 2,
-		icon: <Statistic02 className='h-[50px] w-[175.26px]' />,
+		icon: (
+			<Statistic02 className='md:h-[100px] md:w-[100px] h-[80px] w-[80px]' />
+		),
 		title: "شاحنة نقل السيارات",
 		count: "150",
 	},
 	{
 		id: 3,
-		icon: <Statistic03 className='h-[100px] w-[100px]' />,
+		icon: (
+			<Statistic03 className='md:h-[100px] md:w-[100px] h-[80px] w-[80px]' />
+		),
 		title: "شاحنة نقل سيارة",
 		count: "160",
 	},
 	{
 		id: 4,
-		icon: <Statistic04 className='h-[100px] w-[106px]' />,
+		icon: (
+			<Statistic04 className='md:h-[100px] md:w-[100px] h-[80px] w-[80px]' />
+		),
 		title: "شاحنة بضائع",
 		count: "20",
 	},
 	{
 		id: 5,
-		icon: <Statistic05 className='h-[100px] w-[102px]' />,
+		icon: (
+			<Statistic05 className='md:h-[100px] md:w-[100px] h-[80px] w-[80px]' />
+		),
 		title: "موظف",
 		count: "100",
 	},
@@ -73,16 +83,16 @@ const Statistic = () => {
 	}, []);
 
 	return (
-		<section id='statistic' className=' container py-[180px]'>
-			<div className='w-[1200px]  mx-auto flex justify-between items-center'>
+		<section id='statistic' className=' container py-[130px]'>
+			<div className='md:w-[1200px] w-full mx-auto flex md:flex-row flex-col justify-between items-center'>
 				{statisticData.map((item) => (
 					<div
-						className='w-[184px] h-full flex flex-col gap-8 justify-center items-center'
+						className='md:w-[184px] w-full h-full flex flex-col  justify-center items-center'
 						key={item.id}>
-						<div className=' flex flex-col gap-[30px] justify-end items-center '>
+						<div className=' flex flex-col md:gap-[30px] gap-1  justify-end items-center '>
 							{" "}
-							<div className='h-[100px]'> {item.icon}</div>
-							<h2 className=' headline-2-ar text-center text-primary-700 '>
+							<div className='md:h-[100px] h-[80px]'> {item.icon}</div>
+							<h2 className='headline-2-ar text-center text-primary-700 '>
 								<CountUp
 									start={0}
 									end={isVisible ? item.count : 0}

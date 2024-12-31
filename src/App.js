@@ -11,10 +11,11 @@ import {
 	Questions,
 	Footer,
 } from "./components";
+import ContactUsInfo from "./components/ContactUsInfo";
 
 function App() {
 	return (
-		<main className='max-w-screen-2xl mx-auto'>
+		<main className='p-0 m-0 '>
 			<Navbar />
 			<Hero />
 			<TrackYourOrder />
@@ -26,6 +27,7 @@ function App() {
 			<Ratings />
 			<Questions />
 			<Footer />
+			<ContactUsInfo />
 		</main>
 	);
 }

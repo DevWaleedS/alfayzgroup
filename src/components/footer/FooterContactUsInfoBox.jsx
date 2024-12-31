@@ -23,7 +23,7 @@ const contactUsInfo = [
 
 const FooterContactUsInfoBox = () => {
 	return (
-		<section className='w-[471px] flex flex-col items-start gap-[25px]'>
+		<section className='md:w-[471px] w-full flex flex-col items-start gap-[25px]'>
 			<h4 className='headline-4-ar text-grayscale-700 text-right'>
 				تواصل معنا
 			</h4>

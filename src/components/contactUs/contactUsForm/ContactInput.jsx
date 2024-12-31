@@ -5,9 +5,9 @@ const ContactInput = ({ type, placeholder, icon }) => {
 		<div
 			className={`w-full flex ${
 				type === "textarea"
-					? "h-[149px] resize-none items-start"
-					: "h-[70px] items-center"
-			} group hover:border-b-primary-600 transition-colors delay-100 ease-in-out rounded-[10px] py-[20px] pr-[20px] gap-3 border border-b-grayscale-100 shadow-inner-custom`}>
+					? "md:h-[149px] h-[130px] resize-none items-start"
+					: "md:h-[70px] h-14 items-center"
+			} group hover:border-b-primary-600 transition-colors delay-100 ease-in-out md:rounded-[10px] rounded-md md:py-[20px] py-4 pr-[20px] md:gap-3 gap-2 border border-b-grayscale-100 shadow-inner-custom`}>
 			{icon}
 			{type === "textarea" ? (
 				<textarea

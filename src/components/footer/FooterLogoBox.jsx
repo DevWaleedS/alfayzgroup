@@ -4,7 +4,7 @@ import SectionParagraph from "../SectionParagraph";
 
 const FooterLogoBox = () => {
 	return (
-		<div className='w-[263px] flex flex-col items-start gap-[20px]'>
+		<div className='md:w-[263px] w-11/12 flex flex-col items-start gap-[20px] mb-10'>
 			<Logo />
 			<SectionParagraph
 				align={"items-start"}

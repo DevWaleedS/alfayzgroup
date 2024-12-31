@@ -4,13 +4,13 @@ import { LineBetweenArrows } from "../../../assets/icons";
 const ArrowsButtons = ({ swiperRef, isEnd, isBeginning }) => {
 	return (
 		<div
-			className={`flex justify-start items-center gap-2 absolute bottom-[490px] !left-[10px] z-10`}>
+			className={`flex justify-start items-center gap-2 absolute 2xl:bottom-[340px] xl:bottom-[480px] bottom-[10px] 2xl:!left-[5rem] xl:!left-0 !-left-32 z-10`}>
 			<button
 				className={`${
 					isBeginning
 						? "bg-primary-700 hover:bg-bg-light"
 						: "bg-bg-light hover:bg-primary-700"
-				} w-[40px] h-[40px] flex justify-center items-center next-button transition-colors delay-100 ease-in-out group   rounded-full p-2`}
+				} md:w-[40px] w-[30px] md:h-[40px] h-[30px] flex justify-center items-center next-button transition-colors delay-100 ease-in-out group   rounded-full p-2`}
 				onClick={() => swiperRef.current?.slideNext()}>
 				<svg
 					className={`${
@@ -29,13 +29,13 @@ const ArrowsButtons = ({ swiperRef, isEnd, isBeginning }) => {
 					<polyline points='9 6 15 12 9 18' />
 				</svg>
 			</button>
-			<LineBetweenArrows className='w-1/2' />
+			<LineBetweenArrows className='2xl:w-full xl:w-1/2 w-1/6' />
 			<button
 				className={`${
 					isEnd
 						? "bg-primary-700 hover:bg-bg-light"
 						: "bg-bg-light hover:bg-primary-700"
-				} w-[40px] h-[40px] flex justify-center items-center next-button transition-colors delay-100 ease-in-out group   rounded-full p-2`}
+				} md:w-[40px] w-[30px] md:h-[40px] h-[30px] flex justify-center items-center next-button transition-colors delay-100 ease-in-out group   rounded-full p-2`}
 				onClick={() => swiperRef.current?.slidePrev()}>
 				<svg
 					className={`${

@@ -189,3 +189,37 @@ button {
 	box-sizing: border-box;
 	cursor: pointer;
 }
+
+@media (max-width: 768px) {
+	/* Typography AR */
+	.headline-1-ar {
+		font-size: var(--fs-h5);
+		font-weight: var(--fw-h4);
+		line-height: var(--lh-h4);
+	}
+
+	.headline-3-ar {
+		font-size: 18px;
+	}
+	.headline-2-ar {
+		font-size: 16px;
+		font-weight: var(--fw-h5);
+		line-height: var(--lh-h5);
+	}
+
+	.headline-4-ar {
+		font-size: var(--fs-h5);
+		font-weight: var(--fw-h5);
+		line-height: var(--lh-h5);
+	}
+
+	.b1-ar {
+		font-size: 14px;
+	}
+	.b2-ar,
+	.b3-ar,
+	.b4-ar,
+	.b5-ar {
+		font-weight: 400;
+	}
+}

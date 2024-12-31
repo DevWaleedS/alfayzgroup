@@ -12,18 +12,27 @@ const SectionContentBox = ({
 	buttonText,
 	hasTowLines,
 	hideBtn,
+	justify,
 	align = "items-start",
-	width = "w-[516px]",
+	width = "md:w-[516px] w-full",
 }) => {
 	return (
 		<div
-			className={`w-full ${className} flex justify-between items-center mb-[50px] `}>
+			className={`w-full ${className} flex md:flex-row flex-col justify-between items-center mb-[50px]`}>
 			<div className={`${width} flex flex-col ${align} gap-3`}>
-				<SectionTitle title={title} hasTowLines={hasTowLines} />
+				<SectionTitle
+					title={title}
+					justify={justify}
+					hideBtn={hideBtn}
+					hasTowLines={hasTowLines}
+					buttonText={buttonText}
+				/>
 				<SectionHeadLin>{headline}</SectionHeadLin>
 				<SectionParagraph paragraph={paragraph} align={align} />
 			</div>
-			{!hideBtn && <Button className='rounded-[10px]'>{buttonText}</Button>}
+			{!hideBtn && (
+				<Button className='rounded-[10px] hidden md:flex'>{buttonText}</Button>
+			)}
 		</div>
 	);
 };

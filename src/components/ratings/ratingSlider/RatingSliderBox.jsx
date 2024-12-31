@@ -21,7 +21,7 @@ import Button from "../../button/Button";
 const RatingSliderBox = ({ sliders, swiperRef, setIsBeginning, setIsEnd }) => {
 	return (
 		<Swiper
-			className=' w-full h-[344px] '
+			className='w-full h-[344px] '
 			onBeforeInit={(swiper) => {
 				swiperRef.current = swiper;
 			}}
@@ -39,12 +39,12 @@ const RatingSliderBox = ({ sliders, swiperRef, setIsBeginning, setIsEnd }) => {
 			}}
 			breakpoints={{
 				320: {
-					slidesPerView: 1,
+					slidesPerView: 1.2,
 					spaceBetween: 15,
 				},
 
 				768: {
-					slidesPerView: 1.5,
+					slidesPerView: 1.2,
 					spaceBetween: 15,
 				},
 				1024: {
@@ -62,10 +62,10 @@ const RatingSliderBox = ({ sliders, swiperRef, setIsBeginning, setIsEnd }) => {
 			modules={[Navigation, Pagination, Autoplay, FreeMode]}>
 			{sliders.map((slider) => (
 				<SwiperSlide
-					className='w-[547px] h-full  bg-bg-light rounded-[20px] p-[30px] shadow-aboutUs-shadow'
+					className='md:w-[547px] w-full h-full  bg-bg-light md:rounded-[20px] rounded-lg md:p-[30px] p-4 shadow-aboutUs-shadow'
 					key={slider.id}>
-					<div className='w-[487px] h-[284px] flex flex-col items-start gap-[20px]'>
-						<div className='w-full flex items-center gap-[21px] m'>
+					<div className='md:w-[487px] w-full md:h-[284px] h-full flex flex-col items-start md:gap-[20px] gap-3'>
+						<div className='w-full flex items-center gap-[21px] '>
 							{slider.image}
 							<div className='w-[378px] flex flex-col items-start gap-3'>
 								<h5 className=' headline-5-ar text-grayscale-600'>

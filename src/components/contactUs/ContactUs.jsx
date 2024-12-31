@@ -6,9 +6,10 @@ import ContactUsForm from "./contactUsForm/ContactUsForm";
 const ContactUs = () => {
 	return (
 		<section className='container '>
-			<div className='flex items-center gap-[50px] mt-8'>
-				<div className='w-1/2 h-[696.69px] flex flex-col items-center '>
+			<div className='flex md:flex-row flex-col items-center md:gap-[50px] gap-5 mt-8'>
+				<div className='md:w-1/2 w-full md:h-[696.69px] h-auto flex flex-col items-center '>
 					<SectionContentBox
+						justify='justify-center'
 						width='w-full mx-auto'
 						align={"items-center"}
 						title={"تواصل معنا"}
@@ -26,7 +27,7 @@ const ContactUs = () => {
 					/>
 					<ContactUsImg className='w-full' />
 				</div>
-				<div className='w-1/2  flex flex-col items-center gap-[10px] rounded-[30px] '>
+				<div className='md:w-1/2 w-full flex flex-col items-center gap-[10px] rounded-[30px] '>
 					<ContactUsForm />
 				</div>
 			</div>

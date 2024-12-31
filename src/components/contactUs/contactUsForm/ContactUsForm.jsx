@@ -17,10 +17,10 @@ const ContactUsForm = () => {
 	return (
 		<form
 			onSubmit={handleOnSubmit}
-			className='flex flex-col items-start w-full gap-[50px] shadow-form-red-blur py-[50px] px-[49px]'>
+			className='flex flex-col items-start w-full md:gap-[50px] gap-6 shadow-form-red-blur md:py-[50px] py-8 md:px-[49px] px-8'>
 			<div className='flex flex-col items-start gap-[30px] '>
 				<div className='flex flex-col items-start gap-4 '>
-					<h3 className='headline-3-ar text-grayscale-600'>
+					<h3 className='headline-3-ar  text-grayscale-600'>
 						املء بيانات النموذج بالاسفل...
 					</h3>
 					<p className='text-base leading-[23.52px] font-medium  text-[#3B636B] text-right'>
